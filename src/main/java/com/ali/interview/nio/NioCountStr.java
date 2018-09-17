@@ -48,6 +48,7 @@ public class NioCountStr {
                             String lastStr = str.substring(start + 1, str.length());
                             if (testStr.contains(lastStr.trim())) {
                                 //字符有包含关系-排除相等字符
+                                //todo bug
                                 if (testStr.equals(lastStr)) {
                                     count++;
                                 } else {
